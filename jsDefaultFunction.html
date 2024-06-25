@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Default Function</title>
+    </head>
+    <body>
+        <script>
+            function product(num1=5,num2=1,...rest){
+
+              var result=num1*num2;
+                
+                for(num of rest){
+
+                   result=result*num
+                }
+
+                console.log(result)
+
+               
+            }
+          
+            product(2,3,5)
+           
+        </script>
+    </body>
+</html>

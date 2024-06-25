@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <script>
+            function Age(){
+                var a = document.getElementById('Age').valueAsNumber;
+                document.getElementById('result').innerText= a < 18 ? 'minor': 'major';
+
+            }
+            function sub(){
+                var a = document.getElementById('sub').valueAsNumber;
+                document.getElementById('asresult').innerText= a < 35 ? 'fail': 'pass';
+
+            }
+            function numch(){
+                var a = document.getElementById('chilc').valueAsNumber;
+                document.getElementById('aresult').innerText= a % 2 == 0 ? 'even' : 'odd';
+
+            }
+        
+            function letch(){
+                var l = document.getElementById('letch').value;
+                document.getElementById('miresult').innerText= l=="a"||l=="e" || l=="i" || l=="o"|| l=="u" ? "vowel": "consonent" 
+
+            }
+        </script>
+        <style>
+            body{
+                margin: 0;
+            }
+            .parant{
+                height: 100vh;
+                width: 100vw;
+                background-color: pink;
+            }
+            .child1{
+                height: 10%;
+                width: 100%;
+                background-color: blue;
+                text-align: center;
+            }
+            .child2{
+                height: 90%;
+                width: 100%;
+                background-color: aqua;
+                display: flex;
+            }
+            .chila{
+                height: 100%;
+                width: 25%;
+                background-color: blueviolet;
+            }
+            .chilb{
+                height: 100%;
+                width: 25%;
+                background-color: maroon;
+            }
+            .chilc{
+                height: 100%;
+                width: 25%;
+                background-color:yellow;
+            }
+            .child{
+                height: 100%;
+                width: 25%;
+                background-color: green;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="parant">
+            <div class="child1">
+                <h1>My Apps</h1>
+            </div>
+            <div class="child2">
+                <div class="chila">
+                    <h3 style="text-align: center;">Major/Minor check</h3><br>
+                    <label for="" style="margin-left: 30;">Age:</label>
+                    <input type="number" id="Age"><br>
+                    <button onclick="Age()" style="margin-left: 100; margin-top: 50;">calculate</button>
+                    <h1 id="result"></h1>
+                </div>
+                <div class="chilb">
+                    <h3 style="text-align: center;">Pass/Fail Check</h3><br>
+                    <label for=""  style="margin-left: 30;">Marks:</label>
+                    <input type="number" id="sub"><br>
+                    <button onclick="sub()" style="margin-left: 100; margin-top: 50;">result</button>
+                    <h1 id="asresult"></h1>
+                </div>
+                <div class="chilc">
+                    <h3 style="text-align: center;">Even/Odd Check</h3><br>
+                    <label for=""  style="margin-left: 30;">Number:</label>
+                    <input type="number" id="chilc"><br>
+                    <button onclick="numch()" style="margin-left: 100; margin-top: 50;">Check</button>
+                    <h1 id="aresult"></h1>
+
+                </div>
+                <div class="child">
+                    <h3 style="text-align: center;">Vowel/Consonenet Check</h3><br>
+                    <label for=""  style="margin-left: 30;">Letter:</label>
+                    <input type="text" id="letch"><br>
+                    <button onclick="letch()" style="margin-left: 100; margin-top: 50;">Check</button>
+                    <h1 id="miresult"></h1>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+

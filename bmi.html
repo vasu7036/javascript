@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            .parant{
+                height: 100vh;
+                width: 100vw;
+                background-color: chocolate;
+                display: flex;
+                justify-content: center;
+               align-items: center;
+              
+            }
+            .child{
+                height: 80%;
+                width: 80%;
+                background-color: white;
+               
+            }
+            .top{
+                height: 20%;
+                width: 100%;
+                background-color: pink;
+               
+            }
+            .bottom{
+                height: 80%;
+                width: 100%;
+                display: flex;
+            }
+            .left{
+                height: 100%;
+                width: 50%;
+                background-color: aqua;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .right{
+                height: 100%;
+                width: 50%;
+                background-color: maroon;
+                
+                
+            }
+            .right1{
+                height: 15%;
+                width: 80%;
+                background-color:gray;
+                margin-top: 10px;
+                margin-left: 30px;
+               
+            }
+            .right2{
+                height: 75%;
+                width: 80%;
+                background-color: blueviolet;
+                margin-top: 10px;
+                margin-left: 30px;
+            }
+            .left1{
+                height: 80%;
+                width: 80%;
+                background-color: gray;
+                /* display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; */
+                box-sizing: border-box;
+                padding: 50px;
+               
+
+            }
+        </style>
+        <script>
+            function bms(){
+                // read
+                var a = document.getElementById('height').valueAsNumber;
+                var b = document.getElementById('weight').valueAsNumber;
+                // write
+                document.getElementById('result').innerText=b/((a/100)*(a/100));
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div class="parant">
+        <div class="child">
+            <div class="top">
+                <h1 style="margin: 0; text-align: center;">Body Mass index(BMI) Calculator</h1>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="left1">
+                    <label for="height">Height</label>
+                    <input type="number" id="height" style="width: 80%;">
+                    <br><br>
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight" style="width: 80%;">
+                    <br><br>
+                    <button onclick="bms()" style="display: block; margin: auto; padding: 10px;background-color: blue;" >Calculate</button>
+                    <p id="result">Your BMI is 27.8(Over Weight)</p>
+                </div>
+                </div>
+                <div class="right">
+                    <div class="right1">
+                        <p style="text-align: center;">You need to lose atleast 9.0Kgs to be in normal range</p>
+                    </div>
+                    <div class="right2">
+                        <img src="bms.png" alt="" style="height: 100%; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

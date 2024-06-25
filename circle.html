@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .parant{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .child{
+                height: 50%;
+                width: 50%;
+                background-color: pink;
+               text-align: center;
+               
+               
+                
+            }
+        </style>
+        <script>
+            function area(){
+                var a = document.getElementById('num1').valueAsNumber;
+                
+                document.getElementById('result').innerText=3.14*a*a
+            }
+            function perimeter(){
+                var a = document.getElementById('num1').valueAsNumber;
+                
+                document.getElementById('result').innerText=2*3.14*a
+            }
+        </script>
+    </head>
+    <body>
+        <div class="parant">
+            <div class="child">
+                <h3>Circle Calculator</h3>
+        <label for="num1" style="margin-top: 40px;">radius:</label>
+        <input type="number" id="num1" style="margin-top: 40px;">
+        <br><br>
+        <button onclick="area()">area</button>
+        <button onclick="perimeter()" style="margin-top: 50;">perimeter</button>
+        <h1 id="result" style="margin-top: 50;">Result is :</h1>
+        </div>
+        </div>
+    </body>
+</html>

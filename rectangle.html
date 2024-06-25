@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function area(){
+             var a = document.getElementById('num1').value;
+             var b = document.getElementById('num2').value;
+             document.getElementById('result').innerText=a*b;
+            }
+            function perimeter(){
+             var a = document.getElementById('num1').valueAsNumber;
+             var b = document.getElementById('num2').valueAsNumber;
+             document.getElementById('result').innerText=2*(a+b);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Rectangle</h1>
+        <label for="num1">Length:</label>
+        <input type="number" id="num1">
+        <br>
+        <label for="num2">Bredth:</label>
+        <input type="number" id="num2">
+        <br>
+        <br>
+        <button onclick="area()"> Area</button>
+        <button onclick="perimeter()">perimeter</button>
+        <h1 id="result">result is:</h1>
+    </body>
+</html>

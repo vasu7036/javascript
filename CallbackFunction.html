@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Callback Function</title>
+    </head>
+    <body>
+        <script>
+
+            //Callback function is a fuction that passing a argument as a anethor function
+
+        //     function first(test){
+
+        //         test()
+        //             console.log(" first call back fnction")
+                
+            
+        //     }
+        //    function second(){
+        //     console.log("this is second call back function")
+        //  }
+        //  first(second)
+
+
+
+        // function add(a,b){
+        //     console.log(a+b)
+        // }
+        // function multi(a,b){
+        //     console.log(a*b)
+        // }
+        // function calculator(val1,val2,operation){
+        //    operation(val1,val2)
+        // }
+        // calculator(2,3,multi)
+        // calculator(2,3,add)
+
+
+
+
+        var num = [2,5,4,3]
+        var res=num.map(function(ele,index,arr){
+            return ele*ele
+        })
+
+        console.log(res)
+            
+        
+        </script>
+    </body>
+</html>

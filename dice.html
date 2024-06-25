@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+            }
+            .parant{
+                height: 100vh;
+                width: 100vw;
+                background-color: pink;
+            }
+            .top{
+                height: 10%;
+                width: 100%;
+                background-color: aqua;
+            }
+            .top{
+                text-align: center;
+            }
+            .bottom{
+                height: 90%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .dice{
+                height: 40%;
+                width: 20%;
+                background-color: brown;
+               
+            }
+            img{
+                height: 100%;
+                width: 100%;
+            }
+
+        </style>
+        
+
+    </head>
+    <body>
+        <div class="parant">
+        <div class="top">
+              <h1> Dice Game</h1>
+        </div>
+        <div class="bottom">
+            <div class="dice">
+                <img id="dice-image" src="dice123/dice1.png" alt="" style="height: 100% ;width: 100%;">
+                     <div>
+                        <button onclick="rollDice()">Roll Dice</button>
+                        <h2 id="result">namaste</h2>
+                     </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <script>
+        function rollDice(){
+            const dn=Math.floor(Math.random()*6)+1;
+           if(dn==1){
+            document.getElementById("dice-image").src="dice123/dice1.png"
+           }
+           else if(dn==2){
+            document.getElementById("dice-image").src="dice123/dice2.png"
+           }
+           else if(dn==3){
+            document.getElementById("dice-image").src="dice123/dice3.png"
+           }
+           else if(dn==4){
+            document.getElementById("dice-image").src="dice123/dice4.png"
+           }
+           else if(dn==5){
+            document.getElementById("dice-image").src="dice123/dice5.png"
+           }
+           else{
+            document.getElementById("dice-image").src="dice123/dice6.png"
+           }
+        }
+   </script>
+</html>

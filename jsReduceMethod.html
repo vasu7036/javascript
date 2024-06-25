@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reduce Method</title>
+    </head>
+    <body>
+        <script>
+            var num = [1258,2,9,5,7,85,6,85,98,45,145]
+          var bigNum =  num.reduce(function(ele,acu){
+                if(acu>ele){
+                    return acu
+                }
+                else{
+                    return ele
+                }
+            },num[0])
+            console.log(num)
+            console.log(bigNum)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Object
+        </title>
+    </head>
+    <body>
+        <script>
+            // Objects are 5 Types To Write
+
+            // 1. Object Literal
+            // 2. Using a New Keyword With Object Constructor
+            // 3. Using a New Keyword With a Constructor Function
+            // 4. Object.create() method
+            // 5. classes
+
+            // let movies = {name:"Jalsa",release:2010,Director:"Thrivikram"}
+           // let movie1 = new Object()
+            // console.log(movies)
+            // movie1.budget=1000000
+            // console.log(movie1)
+            //  movie1.budget=120000000
+            //  movie1.Name='Jalsa'
+            //  console.log(movie1)
+
+            function user(n,p,m){
+                this.name = n;
+                this.place = p;
+                this.mobile = m
+            }
+
+          let  user1 = new user("xyz","lkj",235485)
+          let user2 = new user("dfghj","sdfgh",78945)
+
+            console.log(user2)
+
+        </script>
+    </body>
+</html>

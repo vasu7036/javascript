@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Closure concept</title>
+    </head>
+    <body>
+        <input type="button" onclick="updateclick()" value="click">
+
+        <p id="count">clicked count:0</p>
+        <script>
+             let  count = 0
+            function updateclick(){
+                count = count+1
+
+                let p = document.getElementById('count')
+                p.innerText = `clicked:${count}`
+            }
+
+        </script>
+    </body>
+</html>

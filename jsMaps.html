@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maps</title>
+    </head>
+    <body>
+        <script>
+            var birthDate = [2000,1998,1974,1997]
+            var ages = birthDate.map(function(ele,index,arr){
+
+                let age = 2024 - ele
+                return age;
+            })
+
+            console.table(birthDate)
+            console.table(ages)
+        </script>
+    </body>
+</html>

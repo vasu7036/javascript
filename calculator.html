@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            .parant{
+                height: 100vh;
+                width: 100vw;
+            }
+            .child{
+                height: 50%;
+                width: 50%;
+            }
+        
+        </style>
+        <script>
+            function sum(){
+                // read
+                var a = document.getElementById('num1').valueAsNumber;
+                var b = document.getElementById('num2').valueAsNumber;
+                // write
+                document.getElementById('result').innerText=a+b;
+            }
+            function sub(){
+                // read
+                var a = document.getElementById('num1').valueAsNumber;
+                var b = document.getElementById('num2').valueAsNumber;
+                // write
+                document.getElementById('result').innerText=a-b;
+            }
+            function mul(){
+                // read
+                var a = document.getElementById('num1').valueAsNumber;
+                var b = document.getElementById('num2').valueAsNumber;
+                // write
+                document.getElementById('result').innerText=a*b;
+
+            }
+            function div(){
+                // read
+                var a = document.getElementById('num1').valueAsNumber;
+                var b = document.getElementById('num2').valueAsNumber;
+                // write
+                document.getElementById('result').innerText=a/b;
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="parant">
+            <div class="child">
+        <h1>calculator</h1>
+        <label for="num1">Num1:</label>
+        <input type="number" name="" id="num1">
+        <br>
+        <label for="num2">Num2:</label>
+        <input type="number" name="" id="num2">
+        <br>
+        <button onclick="sum()">sum</button>
+        <button onclick="sub()">sub</button>
+        <button onclick="mul()">mul</button>
+        <button>div</button>  
+        <h2 id="result"> Result:_</h2>
+    </div>
+        </div>
+    </body>
+</html>
