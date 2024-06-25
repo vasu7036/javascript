@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Call Apply Bind</title>
+    </head>
+    <body>
+        <script>
+            salary = 10000
+            function getsalary(a,b){
+                console.log(this.salary)
+                console.log(a,b)
+            }
+
+            employe = {
+                salary:30000
+            }
+            employe2 = {
+                salary:55000
+            }
+
+            getsalary.call(employe2,23,54)
+
+            getsalary.apply(employe2,[55,56])
+            
+          f1=  getsalary.bind(employe2,85,69)
+
+          f1()
+        </script>
+    </body>
+</html>
