@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>window open</title>
+    </head>
+    <body>
+
+        <h1>this is main window</h1>
+        <button onclick="openWindow()">open window</button>
+        <button onclick="closeWindow()">close window</button>
+        <script>
+            function openWindow(){
+              ref=  window.open("child.html","","height=800px,width=300px,left=100px,top=100px")
+            }
+            function closeWindow(){
+                ref = close()
+            }
+
+        </script>
+    </body>
+</html>
