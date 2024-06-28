@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Asynchronous Function</title>
+    </head>
+    <body>
+        <script>
+
+            // synchronous means wich is line by line execution
+
+            // asyncronous means wich is when the one line takes some time to exicute remaining code will be exicuted 
+            
+            
+            console.log("this is the first line")
+
+            setTimeout(function(){
+              console.log("this is the secound line")
+            },1000)
+
+            console.log("this is third line")
+
+            function test(){
+                console.log("this is the fifth line")
+            }
+            
+            test()
+        </script>
+    </body>
+</html>
