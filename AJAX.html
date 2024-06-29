@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX</title>
+    </head>
+    <body>
+        <input type="submit" class="button" id="special" value="getdata">
+        <div id="data"></div>
+        <script>
+
+            let btn = document.getElementById("special")
+            let dataele = document.getElementById("data")
+            btn.addEventListener('click',loadData)
+             
+           function loadData(){
+            
+            let xhr = new XMLHttpRequest()
+
+            xhr.open("get","jsadvancedtopics.html",true)
+
+            xhr.send()
+
+            xhr.onprogress=function(){
+                dataele.innerText= "loading..."
+            }
+
+            xhr.onload=function(){
+                dataele.innerText= xhr.responseText
+            }
+           }
+            // AJAX helps in fetching the data asynchronously from a remote web server
+            //=> oka server nundi data dynamic ga mana web page lo display chayadaniki use avuthundi
+
+            //data loaded by AJAX call is done asynchronously with out page refresh
+
+            //web server will send responce wich contains data that we have requsted
+
+            //data can be of any format like JSON,XML
+
+            // initially servers used to send data in XML format
+
+            // in js we have to use XMLhttpRequst object to make XML call to exchange data from webserver
+
+            // AJAX request can send to server in with 3 steps
+
+            // 1.create XMLHttpRequest object
+
+            // Ex : let Xhr = new XMLHttpRequst()
+
+            // 2. create request with that object open()method 
+
+            // Syntax : open(method,url,async,username,password)
+
+            //get()  --> server   ->   webpage
+            //post() --> webpage  ->   server
+
+            // async --> true/false 
+
+            // 3. send the request using send()method
+        </script>
+    </body>
+</html>
