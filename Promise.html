@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promise in JS</title>
+    </head>
+    <body>
+        <script>
+            let p = new Promise(function(success,error){
+
+                let datacame = false
+
+                if(datacame){
+                    success([1,2,3])
+                }
+                else
+                    error("promise notdone")
+                
+
+            })
+            console.log(p)
+            p.then(function(data){
+                console.log(data)
+                console.log(p)
+            })
+            p.catch(function(errordata){
+                console.log(errordata)
+            })
+        </script>
+    </body>
+</html>
